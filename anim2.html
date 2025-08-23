@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sun</title>
+    <style>
+        body{
+            background-color:orangered;
+        }
+        .sun{
+            
+            border-radius: 60%;
+             height: 300px;
+            width: 300px;
+            background-color:gold;
+            position: absolute;
+            margin-top: -25px;
+            margin-left: -5px;
+            z-index: 40; 
+            animation-name: anim;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            margin-left: 40%;
+            animation-direction: alternate;
+        }
+        .childsun{
+            border-radius: 60%;
+            height: 250px;
+            width: 250px;
+            margin-top: 140px; 
+            background-color:orangered;
+            position:relative;
+            z-index: 100;
+            animation-duration:linear;
+            margin-right: 300px;
+            margin-left: 45%;
+        
+        }
+          @keyframes anim{
+
+         0%{
+            transform: translate(50px);
+
+         }
+         25%{
+
+         }
+         100%{
+            .sun{
+                animation: shine 4s infinite;
+            }
+            }
+         }  
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sun"></div>
+        <div class="childsun"></div>
+    </div>
+</body>
+</html>
