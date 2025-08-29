@@ -3,11 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transitions1</title>
+    <title>transitions</title>
+    <style>
+        .parent{
+            display: inline-block;
+            padding:10px;
+            position: relative;
+            color:darkgreen;
+            background-color: antiquewhite;
+            
+
+
+        }
+        .child{
+            display: none;
+            position: absolute;
+            color:chocolate
+
+        }
+    .parent:hover .child{
+        display: block;
+    }
+    .nav{
+        position: fixed;
+    }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="nav">
+    <div class="parent">Cource
+        <div class="child">
+            <p>DSA to development</p>
+            <p>GATE 2026 prep</p>
+            <p> get IBM certifications</p>
+            <p>for studentes</p>
+        </div>
+    </div>
+    <div class="parent">Tutorials
+        <div class="child">
+            <p>python</p>
+            <p>java</p>
+            <p>ma& data science</p>
+            <p>web development</p>
+        </div>
+        </div>
+    <div class="parent">Practice
+        <div class="child">
+            <p>pratice coding problems</p>
+            <p> natin skillup-free cources</p>
+            <p> problemes of the day</p>
+        </div>
+        </div>
+    <div class="parent">JOBS
+        <div class="child">
+            <p>APPLY NOW!</p>
+            <p> POST JOBS</p>
+            <p> JOBS UPDATES</p>
+        </div>
         
+
+    </div>
     </div>
 </body>
 </html>
+    
