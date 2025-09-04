@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-are</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-areas: 'anee anee anee anee anee'
+                                 'akhi nari nari nari navee'
+                                  'akhi nari nari nari navee'
+                                  'akhi chintu chintu chintu chintu ';
+            height: 500px;
+            width:500px;
+            border-color: black;
+            border-style: groove;
+            gap:10px;
+            
+            
+        }
+        .child1{
+            grid-area: anee;
+            background-color: chocolate;
+            
+        }
+        .child2{
+            grid-area: akhi;
+            background-color:chartreuse;
+            
+        }
+        .child3{
+            grid-area: nari;
+            background-color:cadetblue;
+            
+        }
+        .child4{
+            grid-area: navee;
+            background-color:darkred;
+            
+        }
+        .child5{
+            grid-area: chintu;
+            background-color:hotpink;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">anee</div>
+        <div class="child2">akhi</div>
+        <div class="child3">nari</div>
+        <div class="child4">navee</div>
+        <div class="child5">chintu</div>
+    </div>
+    
+</body>
+</html>
