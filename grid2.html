@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+        body{
+             background-color: blueviolet;
+        }
+        .parent1{
+            display: grid;
+            border-style:double;
+            border-color: dimgrey;
+            border-width: 5px;
+            height: 400px;
+            width: 400px;
+            border-style: duble;
+            grid-template:repeat(3,1fr) ;
+            gap: 10px;
+        
+        }
+        .childa{
+            background-color: azure;
+            grid-column: 1;
+            grid-row: 1/3;
+
+        }
+        .childb{
+            background-color: azure;
+            grid-column: 2/4;
+
+        }
+        .childc{
+            background-color: azure;
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="childa"></div>
+        <div class="childb"></div>
+        <div class="childc"></div>
+    </div>
+    
+</body>
+</html>
