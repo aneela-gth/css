@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridmedia2</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-areas: 'a a a a a'
+                                 'b c c c d'
+                                  'b c c c d'
+                                  'b e e e e ';
+            height: 500px;
+            width:500px;
+            border-color: black;
+            border-style: groove;
+            gap:10px;   
+            
+        }
+        .child1{
+            grid-area: a;
+            background-color: orange;
+            
+        }
+        .child2{
+            grid-area: b;
+            background-color:yellow;
+            
+        }
+        .child3{
+            grid-area: c;
+            background-color:cadetblue;
+            
+        }
+        .child4{
+            grid-area: d;
+            background-color:brown;
+            
+        }
+        .child5{
+            grid-area: e;
+            background-color:pink;
+        }
+        @media screen and (min-width:320px) and (max-width:426px)
+        {
+            .parent{
+            display: grid;
+            grid-template-areas: 'a a a a a'
+                                 'b c c c d'
+                                  'b c c c d'
+                                  'b e e e e ';
+            height: 500px;
+            width:500px;
+            border-color: black;
+            border-style: groove;
+            gap:10px;
+            
+            
+        }
+        .child1{
+            grid-area: a;
+            background-color: chocolate;
+            
+        }
+        .child2{
+            grid-area: b;
+            background-color:chocolate;
+            
+        }
+        .child3{
+            grid-area: c;
+            background-color:chocolate;
+            
+        }
+        .child4{
+            grid-area: d;
+            background-color:chocolate;
+            
+        }
+        .child5{
+            grid-area: e;
+            background-color:chocolate;
+        }
+    }
+ @media screen and (min-width:425px) and (max-width:768px)
+        {
+        
+        .parent{
+            display: grid;
+            grid-template-areas: 'a a a a a'
+                                 'b c c c d'
+                                  'b c c c d'
+                                  'b e e e e ';
+            height: 500px;
+            width:500px;
+            border-color: black;
+            border-style: groove;
+            gap:10px;
+            
+            
+        }
+        .child1{
+            grid-area: a;
+            background-color: cadetblue;
+            
+        }
+        .child2{
+            grid-area: b;
+            background-color:cadetblue;
+            
+        }
+        .child3{
+            grid-area: c;
+            background-color:cadetblue;
+            
+        }
+        .child4{
+            grid-area: d;
+            background-color:cadetblue;
+            
+        }
+        .child5{
+            grid-area: e;
+            background-color:cadetblue;
+        }
+    }
+     
+                
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">a</div>
+        <div class="child2">b</div>
+        <div class="child3">c</div>
+        <div class="child4">d</div>
+        <div class="child5">e</div>
+    </div>
+    
+</body>
+</html>

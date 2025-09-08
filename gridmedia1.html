@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>gridmedia1</title>
     <style>
 
         .parent{
             display: grid;
             grid-template-areas:
-            'src1 src2 src3 src4 ' 
-            'src1 src2 src3 src4 '
-            'src1 src5 src3 src6 '
-            'src7 src5 src9 src6 '
-            'src7 src8 src10 src11 '
-            'src12 src8 src13 src11 '
-            'src12 src8 src13 src11 '; 
+            'src1 src2 src3 ' 
+            'src1 src2 src3  '
+            'src4 src5 src6  '
+            'src4 src8 src6 '
+            'src7 src8 src9  '
+            'src10 src8 src9  '
+            'src12 src11 src13  '
+            'src12 src11 src13'; 
             height: 100vh;
             width: 100vw;
             
@@ -76,7 +77,14 @@
         .parent img{
             height: 100%;
             width: 100%;
-        }                 
+        }  
+        @media screen and (min-width:320px) and (max-width:426px)
+        {
+        } 
+        @media srceen and (min-width:438px) and (max-width:769)  
+        {
+            
+        }        
                  
     </style>
 </head>
@@ -98,3 +106,4 @@
     </div>
 </body>
 </html>
+    

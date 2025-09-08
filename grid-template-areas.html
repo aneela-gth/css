@@ -7,10 +7,10 @@
     <style>
         .parent{
             display: grid;
-            grid-template-areas: 'anee anee anee anee anee'
-                                 'akhi nari nari nari navee'
-                                  'akhi nari nari nari navee'
-                                  'akhi chintu chintu chintu chintu ';
+            grid-template-areas: 'a a a a a'
+                                 'b c c c d'
+                                  'b c c c d'
+                                  'b e e e e ';
             height: 500px;
             width:500px;
             border-color: black;
@@ -20,27 +20,27 @@
             
         }
         .child1{
-            grid-area: anee;
+            grid-area: a;
             background-color: chocolate;
             
         }
         .child2{
-            grid-area: akhi;
+            grid-area: b;
             background-color:chartreuse;
             
         }
         .child3{
-            grid-area: nari;
+            grid-area: c;
             background-color:cadetblue;
             
         }
         .child4{
-            grid-area: navee;
+            grid-area: d;
             background-color:darkred;
             
         }
         .child5{
-            grid-area: chintu;
+            grid-area: e;
             background-color:hotpink;
         }
         
@@ -48,11 +48,11 @@
 </head>
 <body>
     <div class="parent">
-        <div class="child1">anee</div>
-        <div class="child2">akhi</div>
-        <div class="child3">nari</div>
-        <div class="child4">navee</div>
-        <div class="child5">chintu</div>
+        <div class="child1">a</div>
+        <div class="child2">b</div>
+        <div class="child3">c</div>
+        <div class="child4">d</div>
+        <div class="child5">e</div>
     </div>
     
 </body>
